@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug devcontainer-swift",
+            "program": "${workspaceFolder:devcontainer-swift}/.build/debug/devcontainer-swift",
+            "args": [],
+            "cwd": "${workspaceFolder:devcontainer-swift}",
+            "preLaunchTask": "swift: Build Debug devcontainer-swift"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Release devcontainer-swift",
+            "program": "${workspaceFolder:devcontainer-swift}/.build/release/devcontainer-swift",
+            "args": [],
+            "cwd": "${workspaceFolder:devcontainer-swift}",
+            "preLaunchTask": "swift: Build Release devcontainer-swift"
+        }
+    ]
+}
